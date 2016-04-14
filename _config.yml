@@ -1,2 +1,3 @@
 name: Pradeep B
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
