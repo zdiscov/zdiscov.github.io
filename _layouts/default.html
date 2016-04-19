@@ -19,7 +19,7 @@
 	<body>
 		<script type="text/javascript">
 		dataset=[5];
-		var cir = svg.select("body").select("svg").selectAll("circle")
+		var cir = d3.select("body").select("svg").selectAll("circle")
     		.data(dataset)
 		.enter()
 		.append("circle")
@@ -27,18 +27,7 @@
 	
 			d3.select("body").append("p").text("New paragraph!");
 			
-			cir.enter().transition()
-    .delay(function(d, i) { return i * 50; })
-    .on("start", function repeat() {
-        d3.active(this)
-            .style("fill", "red")
-          .transition()
-            .style("fill", "green")
-          .transition()
-            .style("fill", "blue")
-          .transition()
-            .on("start", repeat);
-      });
+
 		</script>
 		<nav>
     		<ul>
