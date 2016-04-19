@@ -17,7 +17,7 @@
 	<body>
 		<script type="text/javascript">
 			d3.select("body").append("p").text("New paragraph!");
-			d3.selectAll("circle").transition()
+			d3.selectAll("circle").enter().transition()
     .delay(function(d, i) { return i * 50; })
     .on("start", function repeat() {
         d3.active(this)
