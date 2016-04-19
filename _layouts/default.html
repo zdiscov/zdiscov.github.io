@@ -19,7 +19,7 @@
 	<body>
 		<script type="text/javascript">
 		dataset=[5];
-		var cir = svg.select("body").selectAll("circle")
+		var cir = svg.select("body").select("svg").selectAll("circle")
     		.data(dataset)
 		.enter()
 		.append("circle")
