@@ -27,7 +27,11 @@
             svg.selectAll("circle")
 	    .data(dataset)
 	    .enter()
-	    .append("circle");
+	    .append("circle")
+	    .attr("cx",50)
+	    .attr("cy",50)
+	    .attr("r",50)
+	    .attr("fill","green");
             
 			d3.select("body").append("p").text("New paragraph!");
 			
