@@ -17,6 +17,18 @@
 	<body>
 		<script type="text/javascript">
 			d3.select("body").append("p").text("New paragraph!");
+			d3.selectAll("circle").transition()
+    .delay(function(d, i) { return i * 50; })
+    .on("start", function repeat() {
+        d3.active(this)
+            .style("fill", "red")
+          .transition()
+            .style("fill", "green")
+          .transition()
+            .style("fill", "blue")
+          .transition()
+            .on("start", repeat);
+      });
 		</script>
 		<nav>
     		<ul>
