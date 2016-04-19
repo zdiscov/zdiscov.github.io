@@ -23,10 +23,10 @@
     		.data(dataset)
 		.enter()
 		.append("circle");
-		
-		cir.attr("cx",4).attr("cy",4).attr("r",4).attr("fill","blue")
+		.attr("cx",4).attr("cy",4).attr("r",4).attr("fill","blue")
 	
 			d3.select("body").append("p").text("New paragraph!");
+			
 			cir.enter().transition()
     .delay(function(d, i) { return i * 50; })
     .on("start", function repeat() {
