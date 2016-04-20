@@ -23,16 +23,17 @@
             .append("svg")
             .attr("width", 500)
             .attr("height", 50);
-            
-            repeat();
+          
+            	    cirsvg = svg.selectAll("circle")
+		    .data(dataset)
+		    .enter()
+		    .append("circle");  
+            	repeat();
             
             func repeat()
             {
-            	    svg.selectAll("circle")
-		    .data(dataset)
-		    .enter()
-		    .append("circle")
-		    .attr("cx",10)
+          
+		    cirsvg.attr("cx",10)
 		    .attr("cy",10)
 		    .attr("r",10)
 		    .attr("fill","green")
