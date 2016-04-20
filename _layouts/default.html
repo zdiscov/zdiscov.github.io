@@ -33,7 +33,10 @@
 	    .attr("r",10)
 	    .attr("fill","green")
 	    .transition()
-	    .attr("fill","red");
+	    .delay(5000)
+	    .attr("fill","red")
+	    .each("end",repeat);
+            
             
 			d3.select("body").append("p").text("New paragraph!");
 			
