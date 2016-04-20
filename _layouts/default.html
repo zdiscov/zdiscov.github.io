@@ -31,7 +31,9 @@
 	    .attr("cx",10)
 	    .attr("cy",10)
 	    .attr("r",10)
-	    .attr("fill","green");
+	    .attr("fill","green")
+	    .transition()
+	    .attr("fill,"red");
             
 			d3.select("body").append("p").text("New paragraph!");
 			
