@@ -33,8 +33,11 @@
 	    .attr("r",10)
 	    .attr("fill","green")
 	    .transition()
-	    .attr("fill","red");
-            
+	    .attr("fill","red")
+            .on("mouseover", function(){
+      		d3.select(this).transition().duration(300)
+        	.style("background-color", "#FFD700");
+    		});
 			d3.select("body").append("p").text("New paragraph!");
 			
 		</script>
