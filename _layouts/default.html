@@ -24,19 +24,23 @@
             .attr("width", 500)
             .attr("height", 50);
             
-            svg.selectAll("circle")
-	    .data(dataset)
-	    .enter()
-	    .append("circle")
-	    .attr("cx",10)
-	    .attr("cy",10)
-	    .attr("r",10)
-	    .attr("fill","green")
-	    .transition()
-	    .delay(5000)
-	    .attr("fill","red")
-	    .each("end",repeat);
+            repeat();
             
+            func repeat()
+            {
+            	    svg.selectAll("circle")
+		    .data(dataset)
+		    .enter()
+		    .append("circle")
+		    .attr("cx",10)
+		    .attr("cy",10)
+		    .attr("r",10)
+		    .attr("fill","green")
+		    .transition()
+		    .delay(5000)
+		    .attr("fill","red")
+		    .each("end",repeat);
+            }
             
 			d3.select("body").append("p").text("New paragraph!");
 			
