@@ -32,10 +32,16 @@
 	    .attr("cy",10)
 	    .attr("r",10)
 	    .on( 'mouseenter', function() {
-          d3.select( this )
-            .transition()
-            .attr("fill","blue")
-        } )
+          	d3.select( this )
+            	.transition()
+            	.attr("fill","blue")
+        	} )
+            .on('mouseleave', function() {
+          	d3.select( this )
+            	.transition()
+            	.attr("fill","red")
+        	}
+            	)
 	    .attr("fill","green")
 	    .transition()
 	    .attr("fill","red");
