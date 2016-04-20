@@ -31,6 +31,11 @@
 	    .attr("cx",10)
 	    .attr("cy",10)
 	    .attr("r",10)
+	    .on( 'mouseenter', function() {
+          d3.select( this )
+            .transition()
+            .attr("fill","blue")
+        } )
 	    .attr("fill","green")
 	    .transition()
 	    .attr("fill","red");
