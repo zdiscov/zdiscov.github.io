@@ -18,34 +18,25 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-		dataset=[5];
+		dataset=[5]
 		var svg = d3.select("body")
             .append("svg")
             .attr("width", 500)
             .attr("height", 50);
-          
-            	    cirsvg = svg.selectAll("circle")
-		    .data(dataset)
-		    .enter()
-		    .append("circle");  
-            	repeat();
             
-            func repeat()
-            {
-          
-		    cirsvg.attr("cx",10)
-		    .attr("cy",10)
-		    .attr("r",10)
-		    .attr("fill","green")
-		    .transition()
-		    .delay(5000)
-		    .attr("fill","red")
-		    .each("end",repeat);
-            }
+            svg.selectAll("circle")
+	    .data(dataset)
+	    .enter()
+	    .append("circle")
+	    .attr("cx",10)
+	    .attr("cy",10)
+	    .attr("r",10)
+	    .attr("fill","green")
+	    .transition()
+	    .attr("fill","red");
             
 			d3.select("body").append("p").text("New paragraph!");
 			
-
 		</script>
 		<nav>
     		<ul>
