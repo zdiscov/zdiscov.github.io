@@ -48,8 +48,10 @@
             
 			d3.select("body").append("p").text("New paragraph!");
 			
-			
-			d3.select("body").select("svg").append("rect")
+			svg.selectAll("rect")
+			.data(dataset)
+			.enter()
+			.append("rect")
 			    .attr("rx",100)
 			    .attr("ry",100)
 			    .attr("x",100)
