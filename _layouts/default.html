@@ -48,6 +48,31 @@
             
 			d3.select("body").append("p").text("New paragraph!");
 			
+			
+			d3.select("body").select("svg").append("rect")
+			    .attr("rx",100)
+			    .attr("ry",100)
+			    .attr("x",100)
+			    .attr("y",100)
+			    .attr("width",100)
+			    .attr("height",100)
+			    .attr("stroke","black")
+			    .attr("fill","white")
+			    .on("mousenter",function(){
+			    	d3.select(this)
+			    	.transition()
+				    .duration(1000)
+				    .attr("rx",0)
+				    .attr("ry",0);
+			    })
+			    .on("mouseleave",function(){
+			    	d3.select(this)
+			    	.transition()
+			    	.duration(2000)
+			    	.attr("rx",100)
+			    	.attr("ry",100)
+			    });
+			    
 		</script>
 		<nav>
     		<ul>
