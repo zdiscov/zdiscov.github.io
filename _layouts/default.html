@@ -68,6 +68,7 @@
 				    .attr("ry",100);
 			    })
 			    .on("mouseout",function(){
+			    	window.show("mouse out fired")
 			    	d3.select(this)
 			    	.transition()
 			    	.attr("rx",20)
