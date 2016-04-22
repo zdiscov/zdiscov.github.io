@@ -65,12 +65,14 @@
 			    	.transition()
 				    .attr("rx",20)
 				    .attr("ry",20)
+				    .attr("fill","green");
 			    })
 			    .on("mouseleave",function(){
 			    	d3.select(this)
 			    	.transition()
 			    	.attr("rx",0)
-			    	.attr("ry",0);
+			    	.attr("ry",0)
+			    	.attr("fill","brown");
 			    });
 			    
 		</script>
