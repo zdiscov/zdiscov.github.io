@@ -52,8 +52,6 @@
 			.data(dataset)
 			.enter()
 			.append("rect")
-			    .attr("rx",20)
-			    .attr("ry",20)
 			    .attr("x",20)
 			    .attr("y",20)
 			    .attr("width",20)
@@ -67,8 +65,8 @@
 				    .attr("rx",100)
 				    .attr("ry",100);
 			    })
-			    .on("mouseout",function(){
-			    	window.show("mouse out fired")
+			    .on("mouseleave",function(){
+			    	window.show("mouse out fired");
 			    	d3.select(this)
 			    	.transition()
 			    	.attr("rx",20)
