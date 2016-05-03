@@ -16,12 +16,10 @@ _This_ is **meant** to work!
 <script src="http://code.highcharts.com/modules/heatmap.js"></script>
 <script src="http://code.highcharts.com/modules/treemap.js"></script>
 <script src="http://code.highcharts.com/modules/funnel.js"></script>
-</head>
-<body>
 <div id="container" style="height: 100%; width: 100%;"></div>
 
 <script type='text/javascript'>
-$(function () {
+
     $('#container').highcharts({
     subtitle: {
       text: 'Click and drag in the plot area to zoom in'
@@ -49,5 +47,5 @@ $(function () {
       type: 'datetime'
     }
   });
-});
+
 </script>
