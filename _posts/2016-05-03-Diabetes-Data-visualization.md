@@ -4,10 +4,10 @@ category : js
 tagline: "Testing highcharts"
 tags : [highcharts]
 ---
-
-### This is my first post. Does it work?
-_This_ is **meant** to work!
-
+### Sleuthing with AGM and Highcharts -- Charting blood glucose with Freestyle Libre AGM sensor output
+_Freestyle Libre_ is an extremely convenient **AGM** device and a lifesaver for diabetic patients. My friend John was recommended this device to continuously monitor blood glucose levels and identify the causes for spikes in the chart below.
+The output generated is timestamped once every 15 minutes and is extremely convenient for plotting.
+Marrying this data with Food data we were able to identify the foods that caused spikes in blood glucose levels. Narrowed down to his breakfast that was messing up the whole day causing enormous spikes in blood glucose. We found it out and started tinkering with the breakfast food items to reduce the glucose spikes. 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
