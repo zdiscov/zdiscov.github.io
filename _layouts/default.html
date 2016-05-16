@@ -3,6 +3,9 @@
 	<head>
 		<script type="text/javascript" src="http://d3js.org/d3.v2.js"></script> 
 		
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
 		
 		<svg width="200" height="200">
 			
@@ -94,6 +97,17 @@
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
+		<div id="container2" style="position: relative; width: 500px; height: 300px;"></div>
+		<script>
+		    <!-- var map = new Datamap({element: document.getElementById('container2')}); -->
+		    
+    		    var map = new Datamap({
+		        element: document.getElementById('container2'),
+		        scope: 'usa'
+		    });
+
+		</script>
+
     		<ul>
         		<li><a href="mailto:zdiscov@gmail.com">email</a></li>
         		<li><a href="https://zdiscov.github.io">github.com/zdiscov</a></li>
