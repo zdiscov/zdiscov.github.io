@@ -50,7 +50,7 @@
 	    .transition()
 	    .attr("fill","red");
             
-			d3.select("body").append("p").text("New paragraph!");
+			<!-- d3.select("body").append("p").text("New paragraph!"); -->
 			
 			svg.selectAll("rect")
 			.data(dataset)
@@ -104,7 +104,10 @@
 		    
     		    var map = new Datamap({
 		        element: document.getElementById('container2'),
-		        scope: 'usa'
+		        scope: 'usa',
+		        fills: {
+        		 defaultFill: 'rgba(23,48,210,0.9)' // Any hex, color name or rgb/rgba value
+        		}
 		    });
 
 		</script>
